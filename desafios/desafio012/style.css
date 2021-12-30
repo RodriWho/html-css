@@ -10,6 +10,7 @@
 }
 
 :root {
+    --fontePadrao: Verdana, Geneva, Tahoma, sans-serif;
     --fontePassion: 'Passion One';
     --fonteSriracha: 'Sriracha';
 }
@@ -17,17 +18,20 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fontePadrao);
 }
 
 header {
     background-color: black;
     color: white;
-    font-family:var(--fontePassion);
+    text-align: center;
 }
 
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family:var(--fontePassion);
+    font-size: 10vw;
 }
 
 header > p {
@@ -49,6 +53,8 @@ section {
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height: 2em;
+    font-family: var(--fonteSriracha);
+    font-size: 3.5vw;
 }
 
 section.normal {
@@ -62,7 +68,8 @@ section.imagem {
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.253);
 }
 
